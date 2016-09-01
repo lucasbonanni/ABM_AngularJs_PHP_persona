@@ -56,6 +56,21 @@ app.controller('controlGrilla', function($scope, $http) {
      		
  	 });*/
 
+  $http.get('http://www.mocky.io/v2/57c8ab92120000d913e76a8b').then(function(respuesta)
+  {
+      $scope.ListadoPersonas = respuesta.data;
+      console.log(respuesta.data);
+
+  },function(error)
+  {
+
+      console.log('error:' + error);     
+     $scope.ListadoPersonas = [];
+
+  });
+
+    console.log("estoy en la grilla");
+
 
 
 
