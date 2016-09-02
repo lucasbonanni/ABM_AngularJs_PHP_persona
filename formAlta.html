@@ -52,14 +52,32 @@
 		<div class="CajaInicio animated bounceInRight">
 			<h1> <!--?php echo $titulo; ?-->titulo </h1>
 
-			<form id="FormIngreso"  enctype="multipart/form-data" >
-				<input type="text" name="apellido" ng-model="persona.apellido" placeholder="ingrese apellido" value="" />
+			<form id="FormIngreso" name="FormIngreso" enctype="multipart/form-data" >
+
+
+				<input type="checkbox" ng-model="ver" ><span>{{ver}} </span></input>
+
+				
+
+				<input type="text" name="apellido" ng-if="ver" ng-model="persona.apellido" placeholder="ingrese apellido" value="" />
 				<span id="lblApellido" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*
 				</span>
-				<input type="text" name="nombre" ng-model="persona.nombre" placeholder="ingrese nombre" value="" /> <span id="lblNombre" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
-				<input type="text" name="dni" ng-model="persona.dni" placeholder="ingrese dni" value=""     /> 
+				<input type="text" name="nombre" ng-show="ver" ng-model="persona.nombre" placeholder="ingrese nombre" value="" /> <span id="lblNombre" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
+				<input type="text" name="dni" ng-disabled="ver" ng-model="persona.dni" placeholder="ingrese dni" value=""     /> 
 				<span id="lblDni" style="display:none;color:#FF0000;width:1%;float:right;font-size:80">*</span>
 				<p style='color: black;'>*El DNI no se puede modificar.</p> ": "" ; ?>
+
+
+				<input type="email" name="mail" style="color:black;" ng-show="FormIngreso.email.$invalid"></input>
+
+
+				<input type="password" name="clave" ng-model="persona.password"placeholder="ingrese contraseña" value=""/>
+				
+				<input type="password" name="copia" ng-model="persona.copiapass"placeholder="ingrese contraseña" value=""/> 
+				
+
+
+
 				
 				<input type="hidden" name="idOculto" id="id" value="" />
 				<!--
@@ -70,7 +88,9 @@
 				<p style="  color: black;">*La foto se actualiza al guardar.</p>
 				-->
 
-				<a class="btn btn-info " name="guardar" ng-click="Guardar()" ><span class="glyphicon glyphicon-save">&nbsp;</span>Guardar</a>
+				<!--<a class="btn btn-info " name="guardar" ng-disabled="persona.password!=persona.copiapass" ng-click="Guardar()" ><span class="glyphicon glyphicon-save">&nbsp;</span>Guardar</a>-->
+
+				<a class="btn btn-info " name="guardar" ng-disabled="FormIngreso.mail.$invalid" ng-click="Guardar()" ><span class="glyphicon glyphicon-save">&nbsp;</span>Guardar</a>
 					
 				<input type="hidden" value="" id="idParaModificar" name="agregar" />
 				<input type="hidden" value="" id="hdnAgregar" name="agregar" />

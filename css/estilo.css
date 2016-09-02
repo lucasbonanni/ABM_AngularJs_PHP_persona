@@ -1,5 +1,15 @@
-input[type="text"]{
+/*Estilos para error*/
+input.ng-invalid {
+    background-color: red;
+}
 
+
+span{
+  color:black;
+}
+
+input[type="text"]{
+width: 100%;
   display: block;
   color:black;
 height: 3em;
