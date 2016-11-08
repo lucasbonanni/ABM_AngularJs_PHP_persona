@@ -1,6 +1,0 @@
-Tarea para el hogar:
-
-index.html cargarle un boton fuera de ui para cargar varias paginas;
-1) Persona con el alta, menu y grilla, la hecha en esta clase (clase04).
-2) Login y registro (para dar de alta usuarios).
-3) Pagina abstracta de juegos que incluya los del tp del curso de ingreso de javascript.
