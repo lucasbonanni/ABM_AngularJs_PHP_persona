@@ -102,11 +102,11 @@ app.controller('controlAlta', function($scope, $http) {
 });
 
 
-app.controller('controlGrilla', function($scope, $http) {
+app.controller('controlPersonaGrilla', function($scope, $http) {
   	$scope.DatoTest="**grilla**";
  	
 
-  $http.get(' http://www.mocky.io/v2/57c82b3a1200008404e769ad')
+  $http.get('http://localhost/personaSlim/ws1/usuarios')
   .then(function(respuesta) {       
 
          $scope.ListadoPersonas = respuesta.data;

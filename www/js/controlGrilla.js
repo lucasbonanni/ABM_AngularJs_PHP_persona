@@ -42,7 +42,7 @@ function renderLista(data) {
 function cargar(){
 		$.ajax({
 	        type: "GET",
-	        url: "http://localhost/angular/Angular_PHP_ABM_Persona/ws/personas/",
+	        url: "http://localhost/personaSlim/ws1/usuarios",
 	        success: function(data, textStatus, jqXHR){
 	            // console.log(data);
 	            renderLista(data);
