@@ -1,26 +1,42 @@
+ <!-- Bootstrap Core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- jQuery -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<div class="container">
   <div class=ui-base> 
-	<ul class="nav nav-tabs">
-		         <li  class="btn btn-info animated bounceInLeft" >
-		         	<a ui-sref="inicio()">
-		         		 <span class="glyphicon glyphicon-list-alt">&nbsp;</span>
-		         		 Inicio
+        <div class="row" style="background:rgb(213, 213, 213);">
+           <ul class="nav row">
+		         <li  data-slide="1" class="col-12 col-sm-2">
+		         	<a ui-sref="inicio()" title="Next Section"><span class="icon icon-home"></span> <span class="text">Inicio</span>
+		         		 
 		         	</a>
 		         </li>
-		         <li class="btn btn-info animated bounceInLeft" >
+		         <li data-slide="2" class="col-12 col-sm-2" >
 		         	<a ui-sref="persona.alta()">
 		         		<span class="glyphicon glyphicon-plus-sign">&nbsp;</span>
 		         		Alta
 		         	</a>
 		         </li>
-		         <li  class="btn btn-info animated bounceInLeft" >
+		         <li  data-slide="3" class="col-12 col-sm-2" >
 		         	<a ui-sref="persona.grilla()"> 
 		         		<span class="glyphicon glyphicon-th" >&nbsp;</span>
 		         			Grilla</a>
 		         		</li>
-		        	<span id="tituloBarra"  class="animated bounceInRight">{{DatoTest}}ABM - PHP - Angular Versión 2.0.1 &nbsp;&nbsp;&nbsp;</span>
+		         	<li  data-slide="3" class="col-12 col-sm-2" >
+                    <a ui-sref="persona.login()"> 
+                        <span class="glyphicon glyphicon-th" >&nbsp;</span>
+                            Login</a>
+                        </li>
+		        	<!--span id="tituloBarra"  class="animated bounceInRight">{{DatoTest}}ABM - PHP - Angular Versión 2.0.1 &nbsp;&nbsp;&nbsp;</span-->
       </ul>
+  </div>
+  <div class="row">&nbsp</div>
       <div ui-view name="contenido" animation="slide-left-right">
 
 
        </div></div>
+
+      </div>
