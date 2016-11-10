@@ -9,10 +9,7 @@
         <link rel="icon" href="http://www.octavio.com.ar/favicon.ico">
         
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-        <!--link rel="stylesheet" type="text/css" href="css/estilo.css">
-        <link rel="stylesheet" type="text/css" href="css/animacion.css"-->
 
-        <link rel="stylesheet"  type="text/css" href="css/form-style.css">
         <script SRC="bower_components/angular/angular.min.js" TYPE="text/javascript"></script>
         <script SRC="js/app.js" TYPE="text/javascript"></script>
 
@@ -59,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.edad.$invalid }"">
+                    <!--div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.edad.$invalid }"">
 
                         <label class="col-md-4 control-label" >Edad</label>
                         <div class="col-md-4">
@@ -72,16 +69,16 @@
                                 Drop your images here
                             </div-->
                 
-                <div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.fechaNacimiento.$invalid }">
+                <!--div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.fechaNacimiento.$invalid }">
 
                     <label class="col-md-4 control-label">Fecha Nacimiento</label>
                     <div class="col-md-4">
                     <input type="date" name="fechaNacimiento" ng-model="fechaNacimiento" class="form-control" placeholder="dd/mm/aaaa" required />
                     <span class="has-error glyphicon glyphicon-remove form-control-feedback"   ng-show="FormIngreso.fechaNacimiento.$invalid"  aria-hidden="true"></span>
                     </div>
-                </div>
+                </div-->
 
-                <div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.civil.$invalid }">
+                <!--div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.civil.$invalid }">
                     <label class="col-md-4 control-label">Estado Civil</label>
                     <div class="col-md-4">
                     <select class="form-control" name="civil" ng-model="persona.civil" placeholder="estado civil" required>
@@ -90,7 +87,7 @@
                         <option value="Viudo/a">Viudo/a</option>
                     </select>
                     </div>
-                </div>
+                </div-->
 
                 <div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.dni.$invalid }">
 
@@ -101,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <!--div class="form-group">
 
                     <label class="col-md-4 control-label">Sexo</label>
                     <div class="col-md-4">
@@ -111,10 +108,10 @@
                     <label class="checkbox-inline" ><input type="radio" name="sexo" ng-model="persona.sexo" value="other"> Otro</label>
                     </center>
                     </div>
-                </div>
+                </div-->
 
 
-                <div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.correo.$untouched }">
+                <!--div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.correo.$untouched }">
 
                     <label class="col-md-4 control-label">Mail:</label>
                     <div class="col-md-4">
@@ -124,17 +121,17 @@
                     </div>
                     <span class="has-error glyphicon glyphicon-remove form-control-feedback"   ng-show="FormIngreso.correo.$invalid"  aria-hidden="true"></span>
                     </div>
-                </div>
+                </div-->
 
 
-                <div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.password.$invalid }">
+                <!--div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.password.$invalid }">
                     <label class="col-md-4 control-label" >Password:</label>
                     <div class="col-md-4">
                      <input type="password" name="password" ng-model="persona.password" class="form-control" ng-Minlength="8" ng-required="FormIngreso.confirmPassword.$error" required/>
                     <span class="has-error glyphicon glyphicon-remove form-control-feedback"   ng-show="FormIngreso.password.$invalid"  aria-hidden="true"></span>
                     </div>
-                </div>
-                <div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.confirmPassword.$invalid }">
+                </div-->
+                <!--div class="form-group has-success has-feedback ng-class:{ 'has-error': FormIngreso.confirmPassword.$invalid }">
                     <label class="col-md-4 control-label">Confirme password:</label>
                     <div class="col-md-4">
                     <input type="password" class="form-control" name="confirmPassword" ng-model="password.confirm" match-password="password" required="" />
@@ -143,7 +140,7 @@
                     </div>
 
 
-                </div>
+                </div-->
                 <!--center>
                     ng-required="persona.password!=persona.passConf || FormIngreso.passConf.$pristine"
                     <p>
@@ -153,18 +150,18 @@
                         <span tyle="color:black;">{{FormIngreso.confirmPassword.$error.match}}</span>
                     </p>
                 </center-->
-                <center>
+                <!--center>
                 <span tyle="color:black;">
                     pass1{{FormIngreso.password.$valid}}</br>
                     pass2{{FormIngreso.passConf.$valid}}</span>
                 <input type="hidden" name="idOculto" id="id" value="" />
-                </center>
+                </center-->
                 <!--
                     <input type="file" name="foto" />
                     <img  src="fotos/pordefecto.png" class="fotoform" id="foto"/>
                     <p style="  color: black;">*La foto se actualiza al guardar.</p>
                     -->
-                <div class="form-group">
+                <!--div class="form-group">
                     <label class="col-md-4 control-label"> Lenguaje  de programacion</label> 
                     <div class="col-md-4">
                     <p>
@@ -174,10 +171,7 @@
                     <label class="checkbox-inline">
                     <input type="checkbox" id="inlineCheckbox2" value="Angular"> Angular
                     </label>
-                    <!--/div>
-                    </div>
-                    <div class="form-group">
-                    <div class="col-md-offset-2"-->
+
                     <label class="checkbox-inline">
                     <input type="checkbox" id="inlineCheckbox3" value="PHP"> PHP
                     </label>
@@ -189,10 +183,35 @@
                     </label>
                     </p>
                     </div>
-                </div>
+                </div-->
 
                 <!-- 3. nv-file-over uploader="link" over-class="className" -->
-                
+                <div nv-file-drop="" uploader="SubidorDeArchivos">
+                    <div nv-file-over="" uploader="SubidorDeArchivos" over-class="another-file-over-class" class="well my-drop-zone">
+                        Arrastrá acá para subir una foto (max. 3)
+                    </div>
+                </div>
+                <li ng-repeat="item in SubidorDeArchivos.queue" >
+                    <!-- nombre del archivo -->
+                    Archivo: <span ng-bind="item.file.name"></span><br/>
+                    <!-- imagen del archivo -->
+                    <div ng-show="SubidorDeArchivos.isHTML5" ng-thumb="{ file: item._file, height: 100 }"></div>
+                    <!-- boton upload. Lo puedo usar para carar las fotos o crear
+                        mi propia funcion y llamar a SubidorDeArchivos.uploadAll() -->
+                    <!-- <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                        <span class="glyphicon glyphicon-upload"></span> Upload
+                    </button> -->
+
+                    <!-- boton cancel -->            
+                    <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                        <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                    </button>
+
+                    <!-- boton remove -->
+                    <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                        <span class="glyphicon glyphicon-trash"></span> Remove
+                    </button>
+                </li>  
 
                 <center>
                 <button class="btn btn-info " ng-disabled="FormIngreso.$invalid" ng-click="Guardar()" ><span class="glyphicon glyphicon-save">&nbsp;</span>Guardar</</button>

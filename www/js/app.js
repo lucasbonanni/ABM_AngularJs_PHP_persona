@@ -68,7 +68,7 @@ app.controller('controlPersona', function($scope, $http) {
   $scope.DatoTest="**Menu**";
   $scope.titulo="Inicio y presentacion de la WEB"
 });
-app.controller('controlAlta', function($scope, $http) {
+app.controller('controlPersonaAlta', function($scope, $http) {
   $scope.DatoTest="**alta**";
 
 //inicio las variables
